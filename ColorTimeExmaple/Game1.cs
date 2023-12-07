@@ -11,7 +11,6 @@ namespace ColorTimeExmaple
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         private SpriteFont font;
-        private float frameSpan;
         private double totalMl;
         private double frameCountDown;
         private TimeSpan updateDuration;
@@ -19,9 +18,6 @@ namespace ColorTimeExmaple
         string text = "Sample Color";
         TimeSpan t = TimeSpan.FromSeconds(5);
         int colorRange = 255;
-        float updateRate = 0.4126f; //0.4126f;
-        float colorTick = 0;
-        private float count;
         public enum COUNT_STATE { NONE, STARTED, COUNTING, FINISHED}
         COUNT_STATE countState = COUNT_STATE.NONE;
         public Game1()
